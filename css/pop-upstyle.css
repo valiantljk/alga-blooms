@@ -1,0 +1,15 @@
+BODY { scrollbar-base-color: #6666FF }
+
+a:link		{ color: #0066FF; text-decoration: none }
+
+a:visited	{ color: #336699; text-decoration: none }
+
+a:active	{ color: #FF3333; text-decoration: none }
+
+a:hover		{ color: #3399FF; text-decoration: none }
+
+
+
+TABLE		 { COLOR: #444444; FONT: 12px arial, verdana, sans-serif; font-weight: normal }
+
+.title 		 { color: #6666FF; font: 14px verdana, arial, sans-serif; font-weight: bold }

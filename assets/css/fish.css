@@ -1,0 +1,47 @@
+/* 
+    Document   : fish
+    Created on : Feb 27, 2012, 3:54:21 PM
+    Author     : jialin
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+ul
+{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+
+a:link,a:visited
+{
+    font-weight:bold;
+    color:#FFFFFF;
+    background-color:#b0c4de;
+    width:120px;
+    text-align:center;
+    padding:4px;
+    text-decoration:none;
+    text-transform:uppercase;
+}
+a:hover,a:active
+{
+    background-color:#b0c4de;
+}
+li
+{
+    display: inline;
+}
+
+body
+{
+    background-color:#7A991A;
+}

@@ -1,0 +1,1192 @@
+/********************************************************************************************************
+	HTML STYLE TAGS
+/*******************************************************************************************************/
+* {
+	margin: 0;
+	padding: 0;
+	}
+html, body, div, p, form, input, select, textarea, fieldset {
+	/*font: 11px/15px Arial,Helvetica,Verdana,sans-serif;*/
+	
+	color: #333;
+}
+body {
+/*	background: #900 url("http://www.depts.ttu.edu/shared/shared_ttumain/images/background.gif") repeat-y left top;*/
+	background: #900 url("http://www.depts.ttu.edu/shared/shared_ttumain/images/background-centered.gif") repeat-y center top;
+}
+a img {
+	border: none;
+}
+cite {
+	font-weight: bold;
+	color: #C00;
+}
+#content form label {
+	display:block !important;
+	display:inline-block;
+	float:left;
+	width:175px;
+	padding-right:5px;
+	text-align:right;
+	margin:0 0 3px 0;
+	vertical-align:top;
+	clear:left;
+}
+#content form label.long {
+	width:250px;
+}
+#content form input, #content form textarea {
+	margin:0 0 4px 4px;
+}
+#content form select {
+	margin: 0 0 4px 4px;
+	z-index:1;
+}
+
+#content form td label, #content form td input {
+	display:inline;
+	text-align:left;
+	float:left;
+	clear:none;
+	margin:0 4px;
+}
+/**************************** anchor link styles ********************************/
+a.external{
+	display:inline-block;
+	background: url("http://www.depts.ttu.edu/shared/shared_ttumain/images/icons/extlink.gif") no-repeat 100% 50%;
+	padding-right:20px;
+}
+a.swf {
+	display:inline-block;
+	background: url("http://www.depts.ttu.edu/shared/shared_ttumain/images/icons/swficon.gif") no-repeat 100% 50%;
+	padding-right:20px;
+}
+a.swf:after {
+	content: "(Flash Movie)";
+}
+a.wmedia {
+	display:inline-block;
+	background: url("http://www.depts.ttu.edu/shared/shared_ttumain/images/icons/wmedia.gif") no-repeat 100% 50%;
+	padding-right:20px;
+}
+a.wmedia:after {
+	content: "(Windows Media)";
+}
+a.mail {
+	display:inline-block;
+	background: url("http://www.depts.ttu.edu/shared/shared_ttumain/images/icons/email.gif") no-repeat 100% 50%;
+	padding-right:20px;
+}
+a.pdf {
+	display:inline-block;
+	background: url("http://www.depts.ttu.edu/shared/shared_ttumain/images/icons/pdficon.gif") no-repeat 100% 50%;
+	padding-right:18px;
+}
+a.pdf:after {
+/*	content: " (Acrobat Document)";*/
+}
+a.doc {
+	display:inline-block;
+	background: url("http://www.depts.ttu.edu/shared/shared_ttumain/images/icons/docicon.gif") no-repeat 100% 50%;
+	padding-right:20px;
+}
+a.doc:after {
+/*	content: " (Word Document) "; */
+}
+a.lock {
+	display:inline-block;
+	background: url("http://www.depts.ttu.edu/shared/shared_ttumain/images/icons/lockicon.gif") no-repeat 100% 50%;
+	padding-right:15px;
+}
+a.lock:after {
+	content: "(Secure)";
+}
+a.xls {
+	display:inline-block;
+	background: url("http://www.depts.ttu.edu/shared/shared_ttumain/images/icons/xlsicon.gif") no-repeat 100% 50%;
+	padding-right:20px;
+}
+a.xls:after {
+/*	content: " (Excel Document) ";*/
+}
+a.ppt {
+	display:inline-block;
+	background: url("http://www.depts.ttu.edu/shared/shared_ttumain/images/icons/ppticon.gif") no-repeat 100% 50%;
+	padding-right:20px;
+}
+a.ppt:after {
+/*	content: " (Powerpoint Document) ";*/
+}
+a.rtf {
+	display:inline-block;
+	background: url("http://www.depts.ttu.edu/shared/shared_ttumain/images/icons/docicon.gif") no-repeat 100% 50%;
+	padding-right:20px;
+}
+a.rtf:after {
+	content: "(Rich Text File)";
+}
+/*.qLink {
+	display:inline;
+	background: url("http://www.depts.ttu.edu/shared/shared_ttumain/images/icons/icon_quick.gif") no-repeat 100% 50%;
+	padding-right:20px;
+}
+*/
+.hlink {
+	display:block;
+	background: url("http://www.depts.ttu.edu/shared/shared_ttumain/images/icons/icon_home.gif") no-repeat 100% 50%;
+	padding-right:20px;
+	cursor:pointer;
+}
+/*
+.star {
+	display:inline;
+	background: url("http://www.depts.ttu.edu/shared/shared_ttumain/images/icons/icon_star.gif") no-repeat 100% 50%;
+	padding-right:20px;
+}
+*/
+
+
+/********************************************************************************************************
+	CONTENT TAG STYLES
+/*******************************************************************************************************/
+#content a:link, #content a:visited {
+	color: #c00;
+	text-decoration: none;
+}
+#content a:hover, #content a:active {
+	text-decoration: underline;
+}
+
+#content a.topLink:link, #content a.topLink:visited {
+	display:block;
+	float:right;
+	font-size:12px;
+	color:#c00;
+	width:95%;
+	height:auto;
+	line-height:16px;
+	text-align:right;
+	border:none;
+	padding-right:13px;
+	background:none;
+}
+#content a.topLink:hover, #content a.topLink:active {
+	text-decoration:underline;
+	background: url("http://www.depts.ttu.edu/shared/shared_ttumain/images/icons/backTop.gif") no-repeat 100% 3px;
+	_background-position: 100% 4px;
+}
+#content a.img:link, #content a.img:visited {
+	border:none;
+	margin:1px;
+}
+#content a.img:hover, #content a.img:active {
+	border:1px solid #900;
+	margin:0;
+}
+#content a.button:link, #content a.button:visited, #content a.button:active {
+	background-color:#D4D0C8;
+	color:#000;
+	font-weight:normal;
+	padding:2px 15px;
+	margin:2px;
+	border-top: 2px solid #eee;
+	border-left: 2px solid #eee;
+	border-right: 2px solid #606060;
+	border-bottom: 2px solid #606060;
+}
+#content p {
+	margin: 10px;
+}
+#content ul, #content ol, #content dl {
+	margin: 10px;
+}
+#content ul li {
+	list-style: none;
+	padding: 0 0 5px 10px;
+	background: url("http://www.depts.ttu.edu/shared/shared_ttumain/images/bullet.gif") no-repeat 0 6px;
+	}
+#content ul ul {
+	margin: 5px 5px 0 5px;
+	}
+#content ul li li {
+	background: url("http://www.depts.ttu.edu/shared/shared_ttumain/images/bullet2.gif") no-repeat 0 6px;
+	}
+#content ol {
+	padding: 0 0 0 23px;
+	_padding: 0 0 0 28px;
+	}
+#content li ol {
+	margin: 5px 0 0 0;
+	} 
+#content .normal {
+	font-size:12px;
+}
+/*#content .normal li {
+	padding-bottom:10px;
+}
+#content .noIndent {
+	margin-left:30px;
+}*/
+
+#content dl {
+	margin: 0 0 15px 15px;
+	padding:0;
+}
+#content dd {
+	margin-left:20px;
+}
+#content ul ul{ 
+	list-style-type: square;
+}
+#content ol li {
+	padding-bottom:6px;
+}
+
+.imageWrap, .imageWrapRight {
+	float:left;
+	margin-bottom: 10px;
+	padding: 0 15px 10px 0;
+	line-height:1.2;
+	position:relative;
+	z-index:1;
+	width:100% !important;
+	width:auto;
+}
+
+.imageWrap:after, .imageWrapRight:after, .imageWrap ul:after { content: "."; display: block; height: 0; overflow:hidden; clear: both; visibility:hidden; width:100%; position:relative;} 
+/* Holly Hack Targets IE Win only \*/ * html .imageWrap, * html .imageWrapRight {height: 1%;} /* End Holly Hack */
+
+.imageWrap img, .imageWrapRight img {
+	float: left;
+	padding: 0;
+	margin:0 15px 15px 0;
+	z-index:1;
+}
+.imageWrapRight img{
+	float: right;
+	margin: 0 0 15px 15px;
+	z-index:1;
+}
+
+/* Apply Holly Hack to the non-floated content */
+
+/*  \*/
+* html .imageWrap p {
+	height: 1%;
+}
+/*  */
+
+#content fieldset, #content fieldset td {
+	margin:0 0 15px 0;
+}
+#content fieldset legend {
+	font-weight:bold;
+}
+#content fieldset {
+	padding-left:10px;
+}
+
+/********************************************************************************************************
+	HEADER TAG STYLES
+/*******************************************************************************************************/
+/*h1, h2, h3, h4, h5, h6 {
+	font-family: "Times Roman","Times New Roman",Times,Serif;
+	line-height: 1.2em;
+	text-decoration: none;
+	padding: 0;
+	margin: 0;
+	border: none;
+	letter-spacing: 1px;
+}*/
+h1 {
+	font: normal 29px/32px "Times Roman","Times New Roman",Times,Serif;
+	letter-spacing: 0;
+	color: #c00;
+	background: url("http://www.depts.ttu.edu/shared/shared_ttumain/images/dotted-border-horz.gif") repeat-x 0 bottom;
+	padding: 0 10px 10px 10px;
+	margin-bottom: 10px;
+}
+h2 {
+	font: normal 18px/21px "Times Roman","Times New Roman",Times,Serif;
+	margin: 10px 0;
+	background: url("http://www.depts.ttu.edu/shared/shared_ttumain/images/dotted-border-horz.gif") repeat-x 0 bottom;
+	padding: 0 10px 10px 10px;
+	clear:left;
+}
+h2.subtitle {
+	color:#c00;
+	margin-top: 5px;
+	padding-bottom: 0;
+	background-image: none;
+}
+h3 {
+	font-weight: bold;
+	font-size: 13px;
+	line-height: 16px;
+	margin: 10px;
+}
+h4 {
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #c00;
+	padding: 2px 10px 2px 10px;
+	margin-top: 10px;
+	/*border-top: 1px solid #c00;
+	border-bottom: 1px solid #c00;*/
+}
+h5 {
+	color: #fff;
+	background: #c00;
+	font-size: 10px;
+	line-height: 12px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: bold;
+	padding: 10px;
+	margin-bottom: 10px;
+	}
+h6 {
+	font-size: 11px;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 2px 10px 2px 10px;
+	margin-top: 10px;
+	border-top: 1px solid #666;
+	border-bottom: 1px solid #666;
+}
+#content h1 a:link, #content h1 a:visited, #content h1 a:active, 
+#content h2 a:link, #content h2 a:visited, #content h2 a:active, 
+#content h3 a:link, #content h3 a:visited, #content h3 a:active, 
+#content h4 a:link, #content h4 a:visited, #content h4 a:active,
+#content h5 a:link, #content h5 a:visited, #content h5 a:active, 
+#content h6 a:link, #content h6 a:visited, #content h6 a:active {
+	text-decoration:none;
+	border:none;
+}
+
+#content h1 a:hover, #content h2 a:hover, #content h3 a:hover,
+#content h4 a:hover, #content h5 a:hover, #content h6 a:hover {
+	text-decoration: underline;
+}
+#content h5 a {
+	color: #fff;
+	}
+
+table {
+	margin-bottom: 15px;
+}
+th {
+	color: #fff;
+	background-color: #333;
+	letter-spacing:1px;
+	text-align:center;
+	padding: 2px 6px;
+	font-weight:bold;
+}
+#content th a:link {
+	color: #fff;
+	border-color: #fff;
+}
+tr.red, tr.red th {
+	background-color: #900;
+}
+td {
+	padding: 2px 6px;
+	margin: 0;
+	vertical-align:top;
+}
+tr.alt, tr.alt td {
+	background-color: #f6f6f6;
+}
+tr.bold td {
+	font-weight:bold;
+}
+
+table.fancy {
+	border:1px solid #bbb;
+}
+table.fancy tr td {
+/*	border:none;*/
+}
+tr.hilited, tr.hilited td {
+	background:#9cf;
+	color:#000;
+}
+tr:hover, tr:hover td {
+	background:#9cf;
+	color:#000;
+}
+.smalltext {
+	font-size:10px;
+}
+
+/**************************** miscellaneous styles ********************************/
+.rightfloat {
+	float: right;
+	margin:0 10px 10px 10px;
+}
+.leftfloat {
+	float: left;
+	margin:0 10px 10px 10px;
+}
+.noFloat {
+	float: none;
+}
+.center {
+	margin:0 auto 10px;
+}
+
+/********************************************************************************************************
+	MAIN LAYOUT REGIONS
+/*******************************************************************************************************/
+#skipLinks {
+	display: none;
+}
+#container {
+	text-align:left;
+	width: 900px;
+/*	background: #fff url("http://www.depts.ttu.edu/shared/shared_ttumain/images/background-tier3.gif") repeat-y left top;*/
+	margin: 0px auto;	
+	padding: 0 10px;
+	background: #900 url("http://www.depts.ttu.edu/shared/shared_ttumain/images/background-centered-redbar.gif") repeat-y center top;
+}
+#masthead {
+	position: relative;
+	border-bottom: 10px solid #fff;
+	height: 100px !important;
+	_height /**/:110px;
+	/*background: #000 url("http://www.depts.ttu.edu/shared/shared_ttumain/images/masthead-1.jpg") no-repeat left top;
+	*/
+	background: #000 url(http://www.depts.ttu.edu/shared/shared_ttumain/images/masthead-1.jpg) no-repeat left top;
+}
+#masthead a#homelink {
+	position: absolute;
+	left: 19px;
+	top: 19px;
+	/*width: 53px;*/
+	width:90px;
+	height: 62px;
+    /*background: url("/image/Waterlogo.png") no-repeat left top;*/
+	background: url("http://www.depts.ttu.edu/shared/shared_ttumain/images/logo.gif") no-repeat scroll left top transparent;
+}
+#masthead img {
+	position: absolute;
+	/*left: 125px;*.
+	left:0px;
+	/*left:85px;*/
+	top: 0;
+}
+#globalNav {
+position: relative;
+float: right;
+display: inline;
+margin-right: 10px;
+z-index: 2000;
+width: 700px;
+height: 32px;
+background: 
+#C00 url("/shared/shared_ttumain/images/nav/globalNav_bg.gif") repeat-x left bottom;
+
+}
+/********************************************************************************************************
+	GLOBAL NAV LINKS
+/*******************************************************************************************************/
+#globalNav ul {
+	float: left;
+	list-style: inline;
+	width: 100%;
+}
+#globalNav li {
+	display: block;
+	float: left;
+	position: relative;
+	height: 22px;
+	_height /**/:32px;
+	padding: 10px 11px 0 10px;
+	color: #fff;
+	font-size: 10px;
+	line-height: 10px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: bold;
+	background: url("/shared/shared_ttumain/images/nav/globalNav_right.gif") no-repeat right 10px;
+	cursor:default;
+}
+#globalNav li a,#globalNav li a:active,#globalNav li a:visited {
+	color:#ff0;text-decoration:none;
+}
+
+#globalNav li.end, #globalNav li.endover {
+	background: none;
+	}
+#globalNav li ul {
+	/* second-level lists */
+	position: absolute;
+	left: -9999px;
+	top: 32px;
+	width: 170px;
+	border: 1px solid #900;
+	border-top: none;
+	background: #ccc;
+	_float/**/:left;
+}
+/* #globalNav li:hover ul, */
+#globalNav li.over ul, 
+#globalNav li.endover ul {
+	/* lists nested under hovered list items */
+	left: 0;
+}
+#globalNav li li {
+	width: 170px;
+	background: #ccc;
+	padding: 0;
+	background: url("/shared/shared_ttumain/images/dotted-border-horz.gif") repeat-x 0 bottom;
+	font-size: 11px;
+	line-height: 15px;
+	text-transform: none;
+	font-weight: normal;
+	letter-spacing: 0;
+	height: auto;
+	_float/**/:left;
+}
+#globalNav li li a, #globalNav li li a:visited, #globalNav li li a:active {
+	display: block;
+	padding: 5px 9px;
+	text-decoration: none;
+	color: #c00;
+}
+#globalNav li:hover li:hover, 
+#globalNav li li.over {
+	background: #c00;
+}
+#globalNav li:hover li:hover a, 
+#globalNav li li.over a {
+	color: #fff;
+}
+
+#sideBar {
+	position: relative;
+	z-index: 1000;
+	float: left;
+	display: inline;
+	margin-left: 10px;
+	width: 170px;
+	background: #c00;
+}
+#crumbs {
+	width: 680px;
+	float: left;
+	display: inline;
+	font-size: 12px;
+	line-height: 10px;
+	/*margin: 0px 0px 0px 0px;*/
+	padding-left: 10px; /* value for Mac IE 5 */
+	padding-bottom: 10px;
+	}
+	/* Hides from IE Mac 5 \*/
+	#crumbs { padding-top: 10px; }
+	/* End Mac IE 5 hack */
+
+#content {
+	width: 700px;
+	float: right;
+	display: inline;
+	margin-right: 10px;
+}
+
+#footer {
+	clear: both;
+	background: #fff url("http://www.depts.ttu.edu/shared/shared_ttumain/images/footer.gif") no-repeat 10px 10px; /* value for Mac IE 5 */
+	padding: 20px 10px 20px 20px;
+	margin: 0;
+	border-top: 10px solid #fff;
+	_height: 1%;
+	overflow:auto;
+	width: 870px;
+	}
+	/* hide from Mac IE 5 \*/
+	#footer { background-position: 10px 0; }
+	/* End Mac IE 5 hack */
+
+.columns {
+	margin: 10px 0;
+	width: 100%;
+	}
+	.columns:after {  /* For most non-IE browsers, this encloses the two floating columns completely in the wrapper */
+	content: "."; 
+	display: block; 
+	height: 0; 
+	clear: both;
+	visibility:hidden;
+	}
+	.columns  {display: inline-block;}  /* Fix for IE Mac */
+	/* Hides from IE Mac 5 \*/
+	* html .columns {height: 1%;}
+    /* End IE Mac 5 Hack */
+
+/*MODIFICATIONS TO TIER 5 STYLE SHEET*/	
+.columnLeftCOE {
+	width: 460px;
+	float: left;
+	display: inline;
+}
+.columnRightCOE {
+	width: 230px;
+	float: right;
+	display: inline;
+}
+.columnLeft {	
+	width: 50%;
+	float: left;
+	display: inline;
+}
+.columnRight {	
+	width: 50%;
+	float: right;
+	display: inline;
+}
+
+.learn-more,
+.more-events {
+	display: block;
+	text-decoration: none;
+	text-indent: -9999px;
+    _text-indent /**/:/**/0;
+    _line-height /**/:/**/9999em;
+	}
+	/* hide from Mac IE 5 \*/
+	.imgswap,
+	.learn-more,
+	.more-events { overflow: hidden; }
+	/* End Mac IE 5 hack */
+
+#sidebar-column .learn-more {
+	height: 8px;
+	margin: 7px 0 12px 0;
+	background: url(http://www.depts.ttu.edu/coe/gateway_cms/images/learn-more.gif) no-repeat left top;
+	}
+#sidebar-column .more-events {
+	height: 8px;
+	margin: 7px 0 12px 0;
+	background: url(http://www.depts.ttu.edu/coe/gateway_cms/images/more-events.png) no-repeat left top;
+	}
+#sidebar-column h4 {
+	color: #fff;
+	font-size: 12px;
+	line-height: 14px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	}
+#sidebar-column p {
+	margin: 12px;
+	}
+#story {
+	position: relative;
+	height: 265px;
+	/*border-bottom: 10px solid #fff;*/
+	overflow: hidden;
+	_height /**/:275px;
+	background: #CCCCCC;
+	}
+	#story img {
+		width: 230px;
+		height: 90px;
+		border-width: 0;
+		}	
+	#story h4 {
+		/*margin: 9px 10px 0 10px;*/
+		margin-top: 5px;
+		font-size: 11px;
+		line-height: 14px;
+		color: #c00;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		}
+	#story p {
+		margin: 7px 10px;
+		}
+	#story .learn-more {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 71px;
+		margin: 0 0 11px 10px;
+		}
+.sidebar-fast-facts {
+	background: #CCCCCC;
+	}
+.sidebar-fast-facts h4 {
+	background-color: #c00;
+	padding: 10px;
+	}
+.sidebar-fast-facts p {
+	font-style: italic;
+	}
+			
+.sidebar-story div {
+	position: relative;
+	background-color: #c00;
+	height: 70px;
+	}
+	/* hide from Mac IE 5 \*/
+	.sidebar-story div { overflow: hidden; }
+	/* End MacIE 5 hack */
+	.sidebar-story div img {
+		border-width: 0;
+		height: 70px;
+		width: 70px;
+		}
+	.sidebar-story div h4 {
+		position: absolute;
+		left: 80px;
+		bottom: 10px;
+		width: 135px;
+		}
+		.sidebar-news h4 {
+		background-color: #c00;
+		padding: 10px;
+                color:#fff;
+	}
+		.sidebar-news {
+		padding-bottom:1px;		
+		background: #CCCCCC;
+		}
+}
+.sidebar-news .news-more {
+	height: 25px
+	}
+	.sidebar-news .news-more li {
+		float: left;
+		padding-left: 10px;
+		list-style: none;
+		}
+		.sidebar-news #more-news {
+			float: left;
+			background: url(/coe/gateway_cms/images/more-news.gif) no-repeat left top;
+			width: 69px;
+			height: 8px;
+			}
+		.sidebar-news #more-events {
+			float: left;
+			background: url(/coe/gateway_cms/images/more-events.png) no-repeat left top;
+			width: 78px;
+			height: 8px;
+			padding-bottom:10px;
+			}
+		.sidebar-news #podcasts {
+			float: left;
+			background: url(/coe/gateway_cms/images/podcasts.gif) no-repeat left top;
+			width: 62px;
+			height: 8px;
+			}
+.sidebar-news .news-links {
+	margin: 10px;
+	}
+	.sidebar-news .news-links li {
+		list-style: none;
+		padding-left: 10px;
+		background: url(/coe/gateway_cms/images/bullet.gif) no-repeat 0 6px;
+		}
+#leda {
+	background: #fff url(/coe/gateway_cms/images/logo-leda.gif) no-repeat left top;
+	width: 230px;
+	height: 70px;
+	_height /**/:90px;
+	border: 10px solid #fff;
+	border-width: 10px 0;
+	}
+#leda:hover {
+	background-position: 0 -70px;
+	}
+	
+/*END MODIFICATIONS*/
+
+/********************************************************************************************************
+	PAGE SUB NAVIGATION
+/*******************************************************************************************************/
+#sideBar h3 {
+	color: #fff;
+	background: #900;
+	font-size: 10px;
+	line-height: 12px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: bold;
+	margin: 0;
+	padding: 10px;
+	_float /**/:left;
+	_width /**/:170px;
+}
+#sideBar a#homeLink {
+	display: block;
+	text-decoration: none;
+	width: 154px;
+	height: 28px;
+	margin: 5px;
+	padding: 0px 3px;
+	line-height: 26px;
+	background: #900;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing:1px;
+	font-size: 10px;
+}
+
+#sideBar ul {
+	_float/**/: left;
+	list-style: none;
+	}
+#sideBar li,
+#sideBar li.more {
+	position: relative;
+	z-index: 1000;
+	color: #fff;
+	padding: 5px 10px;
+	_float/**/: left;
+	width: 150px;
+	_width /**/:170px;
+}
+#sideBar li {
+	background: url("http://www.depts.ttu.edu/shared/shared_ttumain/images/nav/nav-border-horz.gif") repeat-x left bottom;
+	}
+#sideBar li.more {
+	background: url("http://www.depts.ttu.edu/shared/shared_ttumain/images/nav/more-border-arrow.gif") no-repeat right bottom;
+	}
+#sideBar li a {
+	color: #fff;
+	display: block;
+	text-decoration: none;
+	width: 150px;
+	padding: 0;
+	_padding: 0 0 0 1px;
+	_margin: 0 0 0 -1px;
+	}
+
+
+#sideBar li:hover,
+#sideBar li.over {
+	background-color: #900;
+	}
+#sideBar li.more:hover,
+#sideBar li.moreover {
+	color: #fff;
+	background: #900 url("http://www.depts.ttu.edu/shared/shared_ttumain/images/nav/more-border-arrow-over.gif") no-repeat right bottom;
+	}
+#sideBar li:hover a,
+#sideBar li.over a,
+#sideBar li.more:hover a,
+#sideBar li.moreover a {
+	color: #fff;
+	}
+		/* 2nd nav level */
+		#sideBar li ul,
+		#sideBar li.more ul {
+			position: absolute;
+			background: #ccc;
+			border: 1px solid #c00;
+			border-left-width: 0;
+			top: 0;
+			left: -9999px;
+			width: 170px !important;
+			}
+/*		#sideBar li:hover ul,
+		#sideBar li.more:hover ul,*/
+		#sideBar li.over ul,
+		#sideBar li.moreover ul {
+			left: 170px;
+			}
+		#sideBar li li,
+		#sideBar li li.more {
+			color: #c00;
+			background-image: none;
+			background-color: #ccc;
+			padding: 2px 5px;
+			border: 3px solid #ccc;
+			border-width: 3px 5px;
+			width: 150px;
+			_width /**/:170px;
+		}
+		#sideBar li li.more {
+			background: #ccc url("http://www.depts.ttu.edu/shared/shared_ttumain/images/nav/arrow-gray.gif") no-repeat 150px 50%;
+			}
+		#sideBar li li:hover,
+		#sideBar li li.over{
+			background-color: #c00;
+			background-image: none;
+			}
+		#sideBar li li.more:hover,
+		#sideBar li li.moreover {
+			background: #c00 url("http://www.depts.ttu.edu/shared/shared_ttumain/images/nav/arrow-white.gif") no-repeat 150px 50%;
+			}
+		#sideBar li li a,
+		#sideBar li li.more a,
+		#sideBar li:hover li a,
+		#sideBar li.over li a,
+		#sideBar li.more:hover li a,
+		#sideBar li.moreover li a,
+		#sideBar li:hover li,
+		#sideBar li.over li,
+		#sideBar li.more:hover li,
+		#sideBar li.moreover li {
+			color: #c00;
+			}
+		#sideBar li li:hover a,
+		#sideBar li li.over a,
+		#sideBar li li.more:hover a,
+		#sideBar li li.moreover a,
+		#sideBar li li:hover,
+		#sideBar li li.over,
+		#sideBar li li.more:hover,
+		#sideBar li li.moreover {
+			color: #fff !important;
+			}
+				/* 3rd nav level */
+				#sideBar li:hover li ul,
+				#sideBar li.over li ul,
+				#sideBar li.more:hover li ul,
+				#sideBar li.moreover li ul {
+					left: -9999px;
+					}
+				#sideBar li li:hover ul,
+				#sideBar li li.over ul,
+				#sideBar li li.more:hover ul,
+				#sideBar li li.moreover ul {
+					left: 165px !important;
+					top: -4px;
+					border-width: 1px;
+					}
+				#sideBar li li li a,
+				#sideBar li li li.more a,
+				#sideBar li li:hover li a,
+				#sideBar li li.over li a,
+				#sideBar li li.more:hover li a,
+				#sideBar li li.moreover li a,
+				#sideBar li li:hover li,
+				#sideBar li li.over li,
+				#sideBar li li.more:hover li,
+				#sideBar li li.moreover li {
+					color: #c00 !important;
+					}
+				#sideBar li li:hover li:hover a,
+				#sideBar li li:hover li.more:hover a,
+				#sideBar li li.over li.over a,
+				#sideBar li li.over li.moreover a,
+				#sideBar li li.more:hover li:hover a,
+				#sideBar li li.more:hover li.more:hover a,
+				#sideBar li li.moreover li.over a,
+				#sideBar li li.moreover li.moreover a,
+				#sideBar li li:hover li:hover,
+				#sideBar li li:hover li.more:hover,
+				#sideBar li li.over li.over,
+				#sideBar li li.over li.moreover,
+				#sideBar li li.more:hover li:hover,
+				#sideBar li li.more:hover li.more:hover,
+				#sideBar li li.moreover li.over,
+				#sideBar li li.moreover li.moreover{
+					color: #fff !important;
+					}
+#sideBar a.pdf,
+#sideBar a.external,
+#sideBar a.swf,
+#sideBar a.wmedia,
+#sideBar a.mail,
+#sideBar a.doc,
+#sideBar a.xls,
+#sideBar a.ppt,
+#sideBar a.rtf,
+#sideBar .hLink {
+	padding-right: 18px;
+	width: 132px;
+	_width /**/:150px;
+}
+#sideBar a.lock,
+#sideBar a.only {
+	padding-right: 15px;
+	width: 135px;
+	_width /**/:150px;
+}
+
+
+/********************************************************************************************************
+	GOOGLE SEARCH FORM
+/*******************************************************************************************************/
+form#searchForm {
+	padding: 10px;
+	_float /**/:left;
+	_width /**/:170px;
+	background-color:#900;
+}
+#searchForm input.searchBox {
+	background: #fff;
+	border: 1px solid #900;
+	padding: 3px;
+	width: 105px;
+}
+#searchForm input.button {
+	color: #fff;
+	font-weight: bold;
+	font-size: 10px;
+	line-height: 10px;
+	text-transform: uppercase;
+	padding: 2px 5px 2px 2px;
+	border: none;
+	background: transparent url("http://www.depts.ttu.edu/shared/shared_ttumain/images/go-arrow-white.gif") no-repeat right 50%;
+	cursor: pointer;
+	_cursor: hand;
+}
+#searchForm a.mini, #searchForm a.mini:active, #searchForm a.mini:visited {
+	display: block;
+	font-size: 10px;
+	line-height: 10px;
+	padding-top: 5px;
+	color: #fff;
+	text-decoration: none;
+}
+#searchForm a.mini:hover {
+	text-decoration: underline;
+}
+/********************************************************************************************************
+	BREAD CRUMBS
+/*******************************************************************************************************/
+#crumbs A {
+	color: #666;
+	text-decoration: none;
+	display:inline-block;
+	background: url("http://www.depts.ttu.edu/shared/shared_ttumain/images/crumb1.gif") no-repeat 100% 50%;
+	padding-right:13px;
+	margin-right:4px;
+}
+#crumbs A:link, #crumbs A:visited {
+	color: #666;
+}
+#crumbs A:hover, #crumbs A:active {
+	color: #c00;
+	text-decoration: none;
+	background: url("http://www.depts.ttu.edu/shared/shared_ttumain/images/crumb2.gif") no-repeat 100% 50%;
+}
+
+
+/********************************************************************************************************
+	FOOTER TEXT
+/*******************************************************************************************************/
+#footer ul,
+#footer p,
+#footer a {
+	color: #999;
+	text-decoration: none;
+	}
+#footer a:hover {
+	color: #666;
+	}
+#footer p {
+	margin: 0 0 2px 0;
+	}
+#contacts img {
+	display: none;
+	}
+#footer ul {
+	list-style: none;
+	margin: 0 0 10px 0;
+	}
+#footer li {
+	padding-left: 10px;
+	background: url('http://www.depts.ttu.edu/shared/shared_ttumain/images/footer-bullet.gif') no-repeat 0 6px;
+	}
+
+/********************************************************************************************************
+	ACROBAT READER LINK
+/*******************************************************************************************************/
+fieldset.download {
+	display: block;
+	padding: 0 10px 10px 10px;
+	margin: 0;
+	border: none;
+	background: #fff url("http://www.depts.ttu.edu/shared/shared_ttumain/images/dotted-border-horz.gif") repeat-x left top;
+}
+fieldset.download legend {
+	display: block;
+	padding-top: 30px;
+	_padding-top: 10px;
+	_margin-left: -5px;
+	font-weight: bold;
+	color: #333;
+}
+fieldset.download a {
+	border: none;
+}
+fieldset.download img {
+	display:block;
+	float:left;
+	padding: 5px 5px 5px 0;
+	border:none;
+}
+fieldset.download span {
+	float:left;
+	padding:6px 10px 0 10px;
+}
+fieldset.download span img {
+	display:inline;
+	float:none;
+	padding:0;
+	margin:0;
+}
+
+#googleContent #content {
+	margin:15px;
+	float:left;
+	font-size:10px;
+}
+#googleContent table td {
+	text-align:left;
+	font-size:10px;
+}
+#googleContent table img {
+	border:none;
+	margin-top:25px;
+}
+#googleContent #content table a {
+	border:none;
+}
+#googleContent #content table table {
+	margin:0;
+	padding:0;
+}
+#googleContent #content a:link {
+	font-size:12px;
+	border-bottom-style:solid;
+}
+#googleContent #content a.fl {
+	font-size:10px;
+}
+#googleContent div {
+	padding-left:20px;
+}
+
+/**************************
+ *    COLLAPSIBLE MENU    *
+ **************************/
+#sideBar dl dd.showSwitch {
+	display: block;
+}
+#sideBar dl dd.hideSwitch {
+	display: none;
+}
+#sideBar h3.expandMenuHdr {
+	padding-right: 0px;
+	cursor: pointer;
+}
+
+#sideBar dl.expandMenu dd {
+	margin: 0px;
+	padding: 0px;
+}
+
+.feature-story {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.7);
+    height: 125px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+}

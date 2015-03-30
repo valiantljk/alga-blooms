@@ -1,0 +1,879 @@
+.
+|-- application
+|   |-- cache
+|   |   |-- .htaccess
+|   |   `-- index.html
+|   |-- config
+|   |   |-- autoload.php
+|   |   |-- config.php
+|   |   |-- constants.php
+|   |   |-- database.php
+|   |   |-- doctypes.php
+|   |   |-- foreign_chars.php
+|   |   |-- hooks.php
+|   |   |-- index.html
+|   |   |-- migration.php
+|   |   |-- mimes.php
+|   |   |-- profiler.php
+|   |   |-- routes.php
+|   |   |-- smileys.php
+|   |   `-- user_agents.php
+|   |-- controllers
+|   |   |-- index.html
+|   |   |-- query.php
+|   |   `-- welcome.php
+|   |-- core
+|   |   `-- index.html
+|   |-- errors
+|   |   |-- error_404.php
+|   |   |-- error_db.php
+|   |   |-- error_general.php
+|   |   |-- error_php.php
+|   |   `-- index.html
+|   |-- helpers
+|   |   `-- index.html
+|   |-- hooks
+|   |   `-- index.html
+|   |-- .htaccess
+|   |-- index.html
+|   |-- language
+|   |   `-- english
+|   |       `-- index.html
+|   |-- libraries
+|   |   `-- index.html
+|   |-- logs
+|   |   `-- index.html
+|   |-- models
+|   |   |-- index.html
+|   |   `-- mquery.php
+|   |-- third_party
+|   |   `-- index.html
+|   `-- views
+|       |-- index.html
+|       |-- query_result.php
+|       |-- query_view.php
+|       |-- save_view.php
+|       |-- statistics_view.php
+|       |-- test.php
+|       |-- test_query_view.php
+|       `-- welcome_message.php
+|-- assets
+|   |-- css
+|   |   |-- jquery-ui-1.8.17.custom.css
+|   |   `-- ui-lightness
+|   |       `-- images
+|   |           |-- ui-bg_diagonals-thick_18_b81900_40x40.png
+|   |           |-- ui-bg_diagonals-thick_20_666666_40x40.png
+|   |           |-- ui-bg_flat_10_000000_40x100.png
+|   |           |-- ui-bg_glass_100_f6f6f6_1x400.png
+|   |           |-- ui-bg_glass_100_fdf5ce_1x400.png
+|   |           |-- ui-bg_glass_65_ffffff_1x400.png
+|   |           |-- ui-bg_gloss-wave_35_f6a828_500x100.png
+|   |           |-- ui-bg_highlight-soft_100_eeeeee_1x100.png
+|   |           |-- ui-bg_highlight-soft_75_ffe45c_1x100.png
+|   |           |-- ui-icons_222222_256x240.png
+|   |           |-- ui-icons_228ef1_256x240.png
+|   |           |-- ui-icons_ef8c08_256x240.png
+|   |           |-- ui-icons_ffd27a_256x240.png
+|   |           `-- ui-icons_ffffff_256x240.png
+|   |-- development-bundle
+|   |   |-- AUTHORS.txt
+|   |   |-- demos
+|   |   |   |-- accordion
+|   |   |   |   |-- collapsible.html
+|   |   |   |   |-- custom-icons.html
+|   |   |   |   |-- default.html
+|   |   |   |   |-- fillspace.html
+|   |   |   |   |-- hoverintent.html
+|   |   |   |   |-- index.html
+|   |   |   |   |-- mouseover.html
+|   |   |   |   |-- no-auto-height.html
+|   |   |   |   `-- sortable.html
+|   |   |   |-- addClass
+|   |   |   |   |-- default.html
+|   |   |   |   `-- index.html
+|   |   |   |-- animate
+|   |   |   |   |-- default.html
+|   |   |   |   `-- index.html
+|   |   |   |-- autocomplete
+|   |   |   |   |-- categories.html
+|   |   |   |   |-- combobox.html
+|   |   |   |   |-- custom-data.html
+|   |   |   |   |-- default.html
+|   |   |   |   |-- folding.html
+|   |   |   |   |-- images
+|   |   |   |   |   |-- jquery_32x32.png
+|   |   |   |   |   |-- jqueryui_32x32.png
+|   |   |   |   |   |-- sizzlejs_32x32.png
+|   |   |   |   |   |-- transparent_1x1.png
+|   |   |   |   |   `-- ui-anim_basic_16x16.gif
+|   |   |   |   |-- index.html
+|   |   |   |   |-- london.xml
+|   |   |   |   |-- maxheight.html
+|   |   |   |   |-- multiple.html
+|   |   |   |   |-- multiple-remote.html
+|   |   |   |   |-- remote.html
+|   |   |   |   |-- remote-jsonp.html
+|   |   |   |   |-- remote-with-cache.html
+|   |   |   |   |-- search.php
+|   |   |   |   `-- xml.html
+|   |   |   |-- button
+|   |   |   |   |-- checkbox.html
+|   |   |   |   |-- default.html
+|   |   |   |   |-- icons.html
+|   |   |   |   |-- index.html
+|   |   |   |   |-- radio.html
+|   |   |   |   |-- splitbutton.html
+|   |   |   |   `-- toolbar.html
+|   |   |   |-- datepicker
+|   |   |   |   |-- alt-field.html
+|   |   |   |   |-- animation.html
+|   |   |   |   |-- buttonbar.html
+|   |   |   |   |-- date-formats.html
+|   |   |   |   |-- date-range.html
+|   |   |   |   |-- default.html
+|   |   |   |   |-- dropdown-month-year.html
+|   |   |   |   |-- icon-trigger.html
+|   |   |   |   |-- images
+|   |   |   |   |   `-- calendar.gif
+|   |   |   |   |-- index.html
+|   |   |   |   |-- inline.html
+|   |   |   |   |-- localization.html
+|   |   |   |   |-- min-max.html
+|   |   |   |   |-- multiple-calendars.html
+|   |   |   |   |-- other-months.html
+|   |   |   |   `-- show-week.html
+|   |   |   |-- demos.css
+|   |   |   |-- dialog
+|   |   |   |   |-- animated.html
+|   |   |   |   |-- default.html
+|   |   |   |   |-- index.html
+|   |   |   |   |-- modal-confirmation.html
+|   |   |   |   |-- modal-form.html
+|   |   |   |   |-- modal.html
+|   |   |   |   `-- modal-message.html
+|   |   |   |-- draggable
+|   |   |   |   |-- constrain-movement.html
+|   |   |   |   |-- cursor-style.html
+|   |   |   |   |-- default.html
+|   |   |   |   |-- delay-start.html
+|   |   |   |   |-- events.html
+|   |   |   |   |-- handle.html
+|   |   |   |   |-- index.html
+|   |   |   |   |-- revert.html
+|   |   |   |   |-- scroll.html
+|   |   |   |   |-- snap-to.html
+|   |   |   |   |-- sortable.html
+|   |   |   |   `-- visual-feedback.html
+|   |   |   |-- droppable
+|   |   |   |   |-- accepted-elements.html
+|   |   |   |   |-- default.html
+|   |   |   |   |-- images
+|   |   |   |   |   |-- high_tatras2.jpg
+|   |   |   |   |   |-- high_tatras2_min.jpg
+|   |   |   |   |   |-- high_tatras3.jpg
+|   |   |   |   |   |-- high_tatras3_min.jpg
+|   |   |   |   |   |-- high_tatras4.jpg
+|   |   |   |   |   |-- high_tatras4_min.jpg
+|   |   |   |   |   |-- high_tatras.jpg
+|   |   |   |   |   `-- high_tatras_min.jpg
+|   |   |   |   |-- index.html
+|   |   |   |   |-- photo-manager.html
+|   |   |   |   |-- propagation.html
+|   |   |   |   |-- revert.html
+|   |   |   |   |-- shopping-cart.html
+|   |   |   |   `-- visual-feedback.html
+|   |   |   |-- effect
+|   |   |   |   |-- default.html
+|   |   |   |   |-- easing.html
+|   |   |   |   `-- index.html
+|   |   |   |-- hide
+|   |   |   |   |-- default.html
+|   |   |   |   `-- index.html
+|   |   |   |-- images
+|   |   |   |   |-- calendar.gif
+|   |   |   |   |-- demo-config-on.gif
+|   |   |   |   |-- demo-config-on-tile.gif
+|   |   |   |   |-- demo-spindown-closed.gif
+|   |   |   |   |-- demo-spindown-open.gif
+|   |   |   |   |-- icon-docs-info.gif
+|   |   |   |   `-- pbar-ani.gif
+|   |   |   |-- index.html
+|   |   |   |-- position
+|   |   |   |   |-- cycler.html
+|   |   |   |   |-- default.html
+|   |   |   |   |-- images
+|   |   |   |   |   |-- earth.jpg
+|   |   |   |   |   |-- flight.jpg
+|   |   |   |   |   `-- rocket.jpg
+|   |   |   |   `-- index.html
+|   |   |   |-- progressbar
+|   |   |   |   |-- animated.html
+|   |   |   |   |-- default.html
+|   |   |   |   |-- images
+|   |   |   |   |   `-- pbar-ani.gif
+|   |   |   |   |-- index.html
+|   |   |   |   `-- resize.html
+|   |   |   |-- removeClass
+|   |   |   |   |-- default.html
+|   |   |   |   `-- index.html
+|   |   |   |-- resizable
+|   |   |   |   |-- animate.html
+|   |   |   |   |-- aspect-ratio.html
+|   |   |   |   |-- constrain-area.html
+|   |   |   |   |-- default.html
+|   |   |   |   |-- delay-start.html
+|   |   |   |   |-- helper.html
+|   |   |   |   |-- index.html
+|   |   |   |   |-- max-min.html
+|   |   |   |   |-- snap-to-grid.html
+|   |   |   |   |-- synchronous-resize.html
+|   |   |   |   |-- textarea.html
+|   |   |   |   `-- visual-feedback.html
+|   |   |   |-- selectable
+|   |   |   |   |-- default.html
+|   |   |   |   |-- display-grid.html
+|   |   |   |   |-- index.html
+|   |   |   |   `-- serialize.html
+|   |   |   |-- show
+|   |   |   |   |-- default.html
+|   |   |   |   `-- index.html
+|   |   |   |-- slider
+|   |   |   |   |-- colorpicker.html
+|   |   |   |   |-- default.html
+|   |   |   |   |-- hotelrooms.html
+|   |   |   |   |-- index.html
+|   |   |   |   |-- multiple-vertical.html
+|   |   |   |   |-- range.html
+|   |   |   |   |-- rangemax.html
+|   |   |   |   |-- rangemin.html
+|   |   |   |   |-- range-vertical.html
+|   |   |   |   |-- side-scroll.html
+|   |   |   |   |-- slider-vertical.html
+|   |   |   |   |-- steps.html
+|   |   |   |   `-- tabs.html
+|   |   |   |-- sortable
+|   |   |   |   |-- connect-lists.html
+|   |   |   |   |-- connect-lists-through-tabs.html
+|   |   |   |   |-- default.html
+|   |   |   |   |-- delay-start.html
+|   |   |   |   |-- display-grid.html
+|   |   |   |   |-- empty-lists.html
+|   |   |   |   |-- index.html
+|   |   |   |   |-- items.html
+|   |   |   |   |-- placeholder.html
+|   |   |   |   `-- portlets.html
+|   |   |   |-- switchClass
+|   |   |   |   |-- default.html
+|   |   |   |   `-- index.html
+|   |   |   |-- tabs
+|   |   |   |   |-- ajax
+|   |   |   |   |   |-- content1.html
+|   |   |   |   |   |-- content2.html
+|   |   |   |   |   |-- content3-slow.php
+|   |   |   |   |   `-- content4-broken.php
+|   |   |   |   |-- ajax.html
+|   |   |   |   |-- bottom.html
+|   |   |   |   |-- collapsible.html
+|   |   |   |   |-- cookie.html
+|   |   |   |   |-- default.html
+|   |   |   |   |-- index.html
+|   |   |   |   |-- manipulation.html
+|   |   |   |   |-- mouseover.html
+|   |   |   |   |-- sortable.html
+|   |   |   |   `-- vertical.html
+|   |   |   |-- toggle
+|   |   |   |   |-- default.html
+|   |   |   |   `-- index.html
+|   |   |   `-- toggleClass
+|   |   |       |-- default.html
+|   |   |       `-- index.html
+|   |   |-- docs
+|   |   |   |-- accordion.html
+|   |   |   |-- addClass.html
+|   |   |   |-- animate.html
+|   |   |   |-- autocomplete.html
+|   |   |   |-- button.html
+|   |   |   |-- datepicker.html
+|   |   |   |-- dialog.html
+|   |   |   |-- draggable.html
+|   |   |   |-- droppable.html
+|   |   |   |-- effect.html
+|   |   |   |-- hide.html
+|   |   |   |-- position.html
+|   |   |   |-- progressbar.html
+|   |   |   |-- removeClass.html
+|   |   |   |-- resizable.html
+|   |   |   |-- selectable.html
+|   |   |   |-- show.html
+|   |   |   |-- slider.html
+|   |   |   |-- sortable.html
+|   |   |   |-- switchClass.html
+|   |   |   |-- tabs.html
+|   |   |   |-- toggleClass.html
+|   |   |   `-- toggle.html
+|   |   |-- external
+|   |   |   |-- jquery.bgiframe-2.1.2.js
+|   |   |   |-- jquery.cookie.js
+|   |   |   |-- jquery.metadata.js
+|   |   |   |-- qunit.css
+|   |   |   `-- qunit.js
+|   |   |-- GPL-LICENSE.txt
+|   |   |-- jquery-1.7.1.js
+|   |   |-- MIT-LICENSE.txt
+|   |   |-- themes
+|   |   |   |-- base
+|   |   |   |   |-- images
+|   |   |   |   |   |-- ui-bg_flat_0_aaaaaa_40x100.png
+|   |   |   |   |   |-- ui-bg_flat_75_ffffff_40x100.png
+|   |   |   |   |   |-- ui-bg_glass_55_fbf9ee_1x400.png
+|   |   |   |   |   |-- ui-bg_glass_65_ffffff_1x400.png
+|   |   |   |   |   |-- ui-bg_glass_75_dadada_1x400.png
+|   |   |   |   |   |-- ui-bg_glass_75_e6e6e6_1x400.png
+|   |   |   |   |   |-- ui-bg_glass_95_fef1ec_1x400.png
+|   |   |   |   |   |-- ui-bg_highlight-soft_75_cccccc_1x100.png
+|   |   |   |   |   |-- ui-icons_222222_256x240.png
+|   |   |   |   |   |-- ui-icons_2e83ff_256x240.png
+|   |   |   |   |   |-- ui-icons_454545_256x240.png
+|   |   |   |   |   |-- ui-icons_888888_256x240.png
+|   |   |   |   |   `-- ui-icons_cd0a0a_256x240.png
+|   |   |   |   |-- jquery.ui.accordion.css
+|   |   |   |   |-- jquery.ui.all.css
+|   |   |   |   |-- jquery.ui.autocomplete.css
+|   |   |   |   |-- jquery.ui.base.css
+|   |   |   |   |-- jquery.ui.button.css
+|   |   |   |   |-- jquery.ui.core.css
+|   |   |   |   |-- jquery.ui.datepicker.css
+|   |   |   |   |-- jquery.ui.dialog.css
+|   |   |   |   |-- jquery.ui.progressbar.css
+|   |   |   |   |-- jquery.ui.resizable.css
+|   |   |   |   |-- jquery.ui.selectable.css
+|   |   |   |   |-- jquery.ui.slider.css
+|   |   |   |   |-- jquery.ui.tabs.css
+|   |   |   |   `-- jquery.ui.theme.css
+|   |   |   `-- ui-lightness
+|   |   |       |-- images
+|   |   |       |   |-- ui-bg_diagonals-thick_18_b81900_40x40.png
+|   |   |       |   |-- ui-bg_diagonals-thick_20_666666_40x40.png
+|   |   |       |   |-- ui-bg_flat_10_000000_40x100.png
+|   |   |       |   |-- ui-bg_glass_100_f6f6f6_1x400.png
+|   |   |       |   |-- ui-bg_glass_100_fdf5ce_1x400.png
+|   |   |       |   |-- ui-bg_glass_65_ffffff_1x400.png
+|   |   |       |   |-- ui-bg_gloss-wave_35_f6a828_500x100.png
+|   |   |       |   |-- ui-bg_highlight-soft_100_eeeeee_1x100.png
+|   |   |       |   |-- ui-bg_highlight-soft_75_ffe45c_1x100.png
+|   |   |       |   |-- ui-icons_222222_256x240.png
+|   |   |       |   |-- ui-icons_228ef1_256x240.png
+|   |   |       |   |-- ui-icons_ef8c08_256x240.png
+|   |   |       |   |-- ui-icons_ffd27a_256x240.png
+|   |   |       |   `-- ui-icons_ffffff_256x240.png
+|   |   |       |-- jquery-ui-1.8.17.custom.css
+|   |   |       |-- jquery.ui.accordion.css
+|   |   |       |-- jquery.ui.all.css
+|   |   |       |-- jquery.ui.autocomplete.css
+|   |   |       |-- jquery.ui.base.css
+|   |   |       |-- jquery.ui.button.css
+|   |   |       |-- jquery.ui.core.css
+|   |   |       |-- jquery.ui.datepicker.css
+|   |   |       |-- jquery.ui.dialog.css
+|   |   |       |-- jquery.ui.progressbar.css
+|   |   |       |-- jquery.ui.resizable.css
+|   |   |       |-- jquery.ui.selectable.css
+|   |   |       |-- jquery.ui.slider.css
+|   |   |       |-- jquery.ui.tabs.css
+|   |   |       `-- jquery.ui.theme.css
+|   |   |-- ui
+|   |   |   |-- i18n
+|   |   |   |   |-- jquery.ui.datepicker-af.js
+|   |   |   |   |-- jquery.ui.datepicker-ar-DZ.js
+|   |   |   |   |-- jquery.ui.datepicker-ar.js
+|   |   |   |   |-- jquery.ui.datepicker-az.js
+|   |   |   |   |-- jquery.ui.datepicker-bg.js
+|   |   |   |   |-- jquery.ui.datepicker-bs.js
+|   |   |   |   |-- jquery.ui.datepicker-ca.js
+|   |   |   |   |-- jquery.ui.datepicker-cs.js
+|   |   |   |   |-- jquery.ui.datepicker-cy-GB.js
+|   |   |   |   |-- jquery.ui.datepicker-da.js
+|   |   |   |   |-- jquery.ui.datepicker-de.js
+|   |   |   |   |-- jquery.ui.datepicker-el.js
+|   |   |   |   |-- jquery.ui.datepicker-en-AU.js
+|   |   |   |   |-- jquery.ui.datepicker-en-GB.js
+|   |   |   |   |-- jquery.ui.datepicker-en-NZ.js
+|   |   |   |   |-- jquery.ui.datepicker-eo.js
+|   |   |   |   |-- jquery.ui.datepicker-es.js
+|   |   |   |   |-- jquery.ui.datepicker-et.js
+|   |   |   |   |-- jquery.ui.datepicker-eu.js
+|   |   |   |   |-- jquery.ui.datepicker-fa.js
+|   |   |   |   |-- jquery.ui.datepicker-fi.js
+|   |   |   |   |-- jquery.ui.datepicker-fo.js
+|   |   |   |   |-- jquery.ui.datepicker-fr-CH.js
+|   |   |   |   |-- jquery.ui.datepicker-fr.js
+|   |   |   |   |-- jquery.ui.datepicker-gl.js
+|   |   |   |   |-- jquery.ui.datepicker-he.js
+|   |   |   |   |-- jquery.ui.datepicker-hr.js
+|   |   |   |   |-- jquery.ui.datepicker-hu.js
+|   |   |   |   |-- jquery.ui.datepicker-hy.js
+|   |   |   |   |-- jquery.ui.datepicker-id.js
+|   |   |   |   |-- jquery.ui.datepicker-is.js
+|   |   |   |   |-- jquery.ui.datepicker-it.js
+|   |   |   |   |-- jquery.ui.datepicker-ja.js
+|   |   |   |   |-- jquery.ui.datepicker-kk.js
+|   |   |   |   |-- jquery.ui.datepicker-ko.js
+|   |   |   |   |-- jquery.ui.datepicker-lb.js
+|   |   |   |   |-- jquery.ui.datepicker-lt.js
+|   |   |   |   |-- jquery.ui.datepicker-lv.js
+|   |   |   |   |-- jquery.ui.datepicker-mk.js
+|   |   |   |   |-- jquery.ui.datepicker-ml.js
+|   |   |   |   |-- jquery.ui.datepicker-ms.js
+|   |   |   |   |-- jquery.ui.datepicker-nl-BE.js
+|   |   |   |   |-- jquery.ui.datepicker-nl.js
+|   |   |   |   |-- jquery.ui.datepicker-no.js
+|   |   |   |   |-- jquery.ui.datepicker-pl.js
+|   |   |   |   |-- jquery.ui.datepicker-pt-BR.js
+|   |   |   |   |-- jquery.ui.datepicker-pt.js
+|   |   |   |   |-- jquery.ui.datepicker-rm.js
+|   |   |   |   |-- jquery.ui.datepicker-ro.js
+|   |   |   |   |-- jquery.ui.datepicker-ru.js
+|   |   |   |   |-- jquery.ui.datepicker-sk.js
+|   |   |   |   |-- jquery.ui.datepicker-sl.js
+|   |   |   |   |-- jquery.ui.datepicker-sq.js
+|   |   |   |   |-- jquery.ui.datepicker-sr.js
+|   |   |   |   |-- jquery.ui.datepicker-sr-SR.js
+|   |   |   |   |-- jquery.ui.datepicker-sv.js
+|   |   |   |   |-- jquery.ui.datepicker-ta.js
+|   |   |   |   |-- jquery.ui.datepicker-th.js
+|   |   |   |   |-- jquery.ui.datepicker-tj.js
+|   |   |   |   |-- jquery.ui.datepicker-tr.js
+|   |   |   |   |-- jquery.ui.datepicker-uk.js
+|   |   |   |   |-- jquery.ui.datepicker-vi.js
+|   |   |   |   |-- jquery.ui.datepicker-zh-CN.js
+|   |   |   |   |-- jquery.ui.datepicker-zh-HK.js
+|   |   |   |   |-- jquery.ui.datepicker-zh-TW.js
+|   |   |   |   `-- jquery-ui-i18n.js
+|   |   |   |-- jquery.effects.blind.js
+|   |   |   |-- jquery.effects.bounce.js
+|   |   |   |-- jquery.effects.clip.js
+|   |   |   |-- jquery.effects.core.js
+|   |   |   |-- jquery.effects.drop.js
+|   |   |   |-- jquery.effects.explode.js
+|   |   |   |-- jquery.effects.fade.js
+|   |   |   |-- jquery.effects.fold.js
+|   |   |   |-- jquery.effects.highlight.js
+|   |   |   |-- jquery.effects.pulsate.js
+|   |   |   |-- jquery.effects.scale.js
+|   |   |   |-- jquery.effects.shake.js
+|   |   |   |-- jquery.effects.slide.js
+|   |   |   |-- jquery.effects.transfer.js
+|   |   |   |-- jquery-ui-1.8.17.custom.js
+|   |   |   |-- jquery.ui.accordion.js
+|   |   |   |-- jquery.ui.autocomplete.js
+|   |   |   |-- jquery.ui.button.js
+|   |   |   |-- jquery.ui.core.js
+|   |   |   |-- jquery.ui.datepicker.js
+|   |   |   |-- jquery.ui.dialog.js
+|   |   |   |-- jquery.ui.draggable.js
+|   |   |   |-- jquery.ui.droppable.js
+|   |   |   |-- jquery.ui.mouse.js
+|   |   |   |-- jquery.ui.position.js
+|   |   |   |-- jquery.ui.progressbar.js
+|   |   |   |-- jquery.ui.resizable.js
+|   |   |   |-- jquery.ui.selectable.js
+|   |   |   |-- jquery.ui.slider.js
+|   |   |   |-- jquery.ui.sortable.js
+|   |   |   |-- jquery.ui.tabs.js
+|   |   |   |-- jquery.ui.widget.js
+|   |   |   `-- minified
+|   |   |       |-- jquery.effects.blind.min.js
+|   |   |       |-- jquery.effects.bounce.min.js
+|   |   |       |-- jquery.effects.clip.min.js
+|   |   |       |-- jquery.effects.core.min.js
+|   |   |       |-- jquery.effects.drop.min.js
+|   |   |       |-- jquery.effects.explode.min.js
+|   |   |       |-- jquery.effects.fade.min.js
+|   |   |       |-- jquery.effects.fold.min.js
+|   |   |       |-- jquery.effects.highlight.min.js
+|   |   |       |-- jquery.effects.pulsate.min.js
+|   |   |       |-- jquery.effects.scale.min.js
+|   |   |       |-- jquery.effects.shake.min.js
+|   |   |       |-- jquery.effects.slide.min.js
+|   |   |       |-- jquery.effects.transfer.min.js
+|   |   |       |-- jquery.ui.accordion.min.js
+|   |   |       |-- jquery.ui.autocomplete.min.js
+|   |   |       |-- jquery.ui.button.min.js
+|   |   |       |-- jquery.ui.core.min.js
+|   |   |       |-- jquery.ui.datepicker.min.js
+|   |   |       |-- jquery.ui.dialog.min.js
+|   |   |       |-- jquery.ui.draggable.min.js
+|   |   |       |-- jquery.ui.droppable.min.js
+|   |   |       |-- jquery.ui.mouse.min.js
+|   |   |       |-- jquery.ui.position.min.js
+|   |   |       |-- jquery.ui.progressbar.min.js
+|   |   |       |-- jquery.ui.resizable.min.js
+|   |   |       |-- jquery.ui.selectable.min.js
+|   |   |       |-- jquery.ui.slider.min.js
+|   |   |       |-- jquery.ui.sortable.min.js
+|   |   |       |-- jquery.ui.tabs.min.js
+|   |   |       `-- jquery.ui.widget.min.js
+|   |   `-- version.txt
+|   |-- index.html
+|   `-- js
+|       |-- jquery-1.4.2.js
+|       |-- jquery-1.7.1.min.js
+|       `-- jquery-ui-1.8.17.custom.min.js
+|-- index.php
+|-- license.txt
+|-- nbproject
+|   |-- private
+|   |   |-- config.properties
+|   |   |-- private.properties
+|   |   `-- private.xml
+|   |-- project.properties
+|   `-- project.xml
+|-- system
+|   |-- core
+|   |   |-- Benchmark.php
+|   |   |-- CodeIgniter.php
+|   |   |-- Common.php
+|   |   |-- Config.php
+|   |   |-- Controller.php
+|   |   |-- Exceptions.php
+|   |   |-- Hooks.php
+|   |   |-- index.html
+|   |   |-- Input.php
+|   |   |-- Lang.php
+|   |   |-- Loader.php
+|   |   |-- Model.php
+|   |   |-- Output.php
+|   |   |-- Router.php
+|   |   |-- Security.php
+|   |   |-- URI.php
+|   |   `-- Utf8.php
+|   |-- database
+|   |   |-- DB_active_rec.php
+|   |   |-- DB_cache.php
+|   |   |-- DB_driver.php
+|   |   |-- DB_forge.php
+|   |   |-- DB.php
+|   |   |-- DB_result.php
+|   |   |-- DB_utility.php
+|   |   |-- drivers
+|   |   |   |-- cubrid
+|   |   |   |   |-- cubrid_driver.php
+|   |   |   |   |-- cubrid_forge.php
+|   |   |   |   |-- cubrid_result.php
+|   |   |   |   |-- cubrid_utility.php
+|   |   |   |   `-- index.html
+|   |   |   |-- index.html
+|   |   |   |-- mssql
+|   |   |   |   |-- index.html
+|   |   |   |   |-- mssql_driver.php
+|   |   |   |   |-- mssql_forge.php
+|   |   |   |   |-- mssql_result.php
+|   |   |   |   `-- mssql_utility.php
+|   |   |   |-- mysql
+|   |   |   |   |-- index.html
+|   |   |   |   |-- mysql_driver.php
+|   |   |   |   |-- mysql_forge.php
+|   |   |   |   |-- mysql_result.php
+|   |   |   |   `-- mysql_utility.php
+|   |   |   |-- mysqli
+|   |   |   |   |-- index.html
+|   |   |   |   |-- mysqli_driver.php
+|   |   |   |   |-- mysqli_forge.php
+|   |   |   |   |-- mysqli_result.php
+|   |   |   |   `-- mysqli_utility.php
+|   |   |   |-- oci8
+|   |   |   |   |-- index.html
+|   |   |   |   |-- oci8_driver.php
+|   |   |   |   |-- oci8_forge.php
+|   |   |   |   |-- oci8_result.php
+|   |   |   |   `-- oci8_utility.php
+|   |   |   |-- odbc
+|   |   |   |   |-- index.html
+|   |   |   |   |-- odbc_driver.php
+|   |   |   |   |-- odbc_forge.php
+|   |   |   |   |-- odbc_result.php
+|   |   |   |   `-- odbc_utility.php
+|   |   |   |-- pdo
+|   |   |   |   |-- index.html
+|   |   |   |   |-- pdo_driver.php
+|   |   |   |   |-- pdo_forge.php
+|   |   |   |   |-- pdo_result.php
+|   |   |   |   `-- pdo_utility.php
+|   |   |   |-- postgre
+|   |   |   |   |-- index.html
+|   |   |   |   |-- postgre_driver.php
+|   |   |   |   |-- postgre_forge.php
+|   |   |   |   |-- postgre_result.php
+|   |   |   |   `-- postgre_utility.php
+|   |   |   |-- sqlite
+|   |   |   |   |-- index.html
+|   |   |   |   |-- sqlite_driver.php
+|   |   |   |   |-- sqlite_forge.php
+|   |   |   |   |-- sqlite_result.php
+|   |   |   |   `-- sqlite_utility.php
+|   |   |   `-- sqlsrv
+|   |   |       |-- index.html
+|   |   |       |-- sqlsrv_driver.php
+|   |   |       |-- sqlsrv_forge.php
+|   |   |       |-- sqlsrv_result.php
+|   |   |       `-- sqlsrv_utility.php
+|   |   `-- index.html
+|   |-- fonts
+|   |   |-- index.html
+|   |   `-- texb.ttf
+|   |-- helpers
+|   |   |-- array_helper.php
+|   |   |-- captcha_helper.php
+|   |   |-- cookie_helper.php
+|   |   |-- date_helper.php
+|   |   |-- directory_helper.php
+|   |   |-- download_helper.php
+|   |   |-- email_helper.php
+|   |   |-- file_helper.php
+|   |   |-- form_helper.php
+|   |   |-- html_helper.php
+|   |   |-- index.html
+|   |   |-- inflector_helper.php
+|   |   |-- language_helper.php
+|   |   |-- number_helper.php
+|   |   |-- path_helper.php
+|   |   |-- security_helper.php
+|   |   |-- smiley_helper.php
+|   |   |-- string_helper.php
+|   |   |-- text_helper.php
+|   |   |-- typography_helper.php
+|   |   |-- url_helper.php
+|   |   `-- xml_helper.php
+|   |-- .htaccess
+|   |-- index.html
+|   |-- language
+|   |   |-- english
+|   |   |   |-- calendar_lang.php
+|   |   |   |-- date_lang.php
+|   |   |   |-- db_lang.php
+|   |   |   |-- email_lang.php
+|   |   |   |-- form_validation_lang.php
+|   |   |   |-- ftp_lang.php
+|   |   |   |-- imglib_lang.php
+|   |   |   |-- index.html
+|   |   |   |-- migration_lang.php
+|   |   |   |-- number_lang.php
+|   |   |   |-- profiler_lang.php
+|   |   |   |-- unit_test_lang.php
+|   |   |   `-- upload_lang.php
+|   |   `-- index.html
+|   `-- libraries
+|       |-- Cache
+|       |   |-- Cache.php
+|       |   `-- drivers
+|       |       |-- Cache_apc.php
+|       |       |-- Cache_dummy.php
+|       |       |-- Cache_file.php
+|       |       `-- Cache_memcached.php
+|       |-- Calendar.php
+|       |-- Cart.php
+|       |-- Driver.php
+|       |-- Email.php
+|       |-- Encrypt.php
+|       |-- Form_validation.php
+|       |-- Ftp.php
+|       |-- Image_lib.php
+|       |-- index.html
+|       |-- javascript
+|       |   `-- Jquery.php
+|       |-- Javascript.php
+|       |-- Log.php
+|       |-- Migration.php
+|       |-- Pagination.php
+|       |-- Parser.php
+|       |-- Profiler.php
+|       |-- Session.php
+|       |-- Sha1.php
+|       |-- Table.php
+|       |-- Trackback.php
+|       |-- Typography.php
+|       |-- Unit_test.php
+|       |-- Upload.php
+|       |-- User_agent.php
+|       |-- Xmlrpc.php
+|       |-- Xmlrpcs.php
+|       `-- Zip.php
+|-- test
+`-- user_guide
+    |-- changelog.html
+    |-- database
+    |   |-- active_record.html
+    |   |-- caching.html
+    |   |-- call_function.html
+    |   |-- configuration.html
+    |   |-- connecting.html
+    |   |-- examples.html
+    |   |-- fields.html
+    |   |-- forge.html
+    |   |-- helpers.html
+    |   |-- index.html
+    |   |-- queries.html
+    |   |-- results.html
+    |   |-- table_data.html
+    |   |-- transactions.html
+    |   `-- utilities.html
+    |-- doc_style
+    |   |-- index.html
+    |   `-- template.html
+    |-- general
+    |   |-- alternative_php.html
+    |   |-- ancillary_classes.html
+    |   |-- autoloader.html
+    |   |-- caching.html
+    |   |-- cli.html
+    |   |-- common_functions.html
+    |   |-- controllers.html
+    |   |-- core_classes.html
+    |   |-- creating_drivers.html
+    |   |-- creating_libraries.html
+    |   |-- credits.html
+    |   |-- drivers.html
+    |   |-- environments.html
+    |   |-- errors.html
+    |   |-- helpers.html
+    |   |-- hooks.html
+    |   |-- libraries.html
+    |   |-- managing_apps.html
+    |   |-- models.html
+    |   |-- profiling.html
+    |   |-- quick_reference.html
+    |   |-- requirements.html
+    |   |-- reserved_names.html
+    |   |-- routing.html
+    |   |-- security.html
+    |   |-- styleguide.html
+    |   |-- urls.html
+    |   `-- views.html
+    |-- helpers
+    |   |-- array_helper.html
+    |   |-- captcha_helper.html
+    |   |-- cookie_helper.html
+    |   |-- date_helper.html
+    |   |-- directory_helper.html
+    |   |-- download_helper.html
+    |   |-- email_helper.html
+    |   |-- file_helper.html
+    |   |-- form_helper.html
+    |   |-- html_helper.html
+    |   |-- inflector_helper.html
+    |   |-- language_helper.html
+    |   |-- number_helper.html
+    |   |-- path_helper.html
+    |   |-- security_helper.html
+    |   |-- smiley_helper.html
+    |   |-- string_helper.html
+    |   |-- text_helper.html
+    |   |-- typography_helper.html
+    |   |-- url_helper.html
+    |   `-- xml_helper.html
+    |-- images
+    |   |-- appflowchart.gif
+    |   |-- arrow.gif
+    |   |-- ci_logo_flame.jpg
+    |   |-- ci_logo.jpg
+    |   |-- ci_quick_ref.png
+    |   |-- codeigniter_1.7.1_helper_reference.pdf
+    |   |-- codeigniter_1.7.1_helper_reference.png
+    |   |-- codeigniter_1.7.1_library_reference.pdf
+    |   |-- codeigniter_1.7.1_library_reference.png
+    |   |-- file.gif
+    |   |-- folder.gif
+    |   |-- nav_bg_darker.jpg
+    |   |-- nav_separator_darker.jpg
+    |   |-- nav_toggle_darker.jpg
+    |   |-- reactor-bullet.png
+    |   |-- smile.gif
+    |   `-- transparent.gif
+    |-- index.html
+    |-- installation
+    |   |-- downloads.html
+    |   |-- index.html
+    |   |-- troubleshooting.html
+    |   |-- upgrade_120.html
+    |   |-- upgrade_130.html
+    |   |-- upgrade_131.html
+    |   |-- upgrade_132.html
+    |   |-- upgrade_133.html
+    |   |-- upgrade_140.html
+    |   |-- upgrade_141.html
+    |   |-- upgrade_150.html
+    |   |-- upgrade_152.html
+    |   |-- upgrade_153.html
+    |   |-- upgrade_154.html
+    |   |-- upgrade_160.html
+    |   |-- upgrade_161.html
+    |   |-- upgrade_162.html
+    |   |-- upgrade_163.html
+    |   |-- upgrade_170.html
+    |   |-- upgrade_171.html
+    |   |-- upgrade_172.html
+    |   |-- upgrade_200.html
+    |   |-- upgrade_201.html
+    |   |-- upgrade_202.html
+    |   |-- upgrade_203.html
+    |   |-- upgrade_210.html
+    |   |-- upgrade_b11.html
+    |   `-- upgrading.html
+    |-- libraries
+    |   |-- benchmark.html
+    |   |-- caching.html
+    |   |-- calendar.html
+    |   |-- cart.html
+    |   |-- config.html
+    |   |-- email.html
+    |   |-- encryption.html
+    |   |-- file_uploading.html
+    |   |-- form_validation.html
+    |   |-- ftp.html
+    |   |-- image_lib.html
+    |   |-- input.html
+    |   |-- javascript.html
+    |   |-- language.html
+    |   |-- loader.html
+    |   |-- migration.html
+    |   |-- output.html
+    |   |-- pagination.html
+    |   |-- parser.html
+    |   |-- security.html
+    |   |-- sessions.html
+    |   |-- table.html
+    |   |-- trackback.html
+    |   |-- typography.html
+    |   |-- unit_testing.html
+    |   |-- uri.html
+    |   |-- user_agent.html
+    |   |-- xmlrpc.html
+    |   `-- zip.html
+    |-- license.html
+    |-- nav
+    |   |-- hacks.txt
+    |   |-- moo.fx.js
+    |   |-- nav.js
+    |   |-- prototype.lite.js
+    |   `-- user_guide_menu.js
+    |-- overview
+    |   |-- appflow.html
+    |   |-- at_a_glance.html
+    |   |-- cheatsheets.html
+    |   |-- features.html
+    |   |-- getting_started.html
+    |   |-- goals.html
+    |   |-- index.html
+    |   `-- mvc.html
+    |-- toc.html
+    |-- tutorial
+    |   |-- conclusion.html
+    |   |-- create_news_items.html
+    |   |-- hard_coded_pages.html
+    |   |-- index.html
+    |   |-- news_section.html
+    |   `-- static_pages.html
+    `-- userguide.css
+
+97 directories, 779 files
