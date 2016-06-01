@@ -1,12 +1,12 @@
-Texas Water Quality Data Analysis Webportal
-
-# Texas has 59 reservoirs, Some algal blooms are the result of an excess of nutrients (particularly phosphorus and nitrogen) into waters and higher concentrations of these nutrients in water cause increased growth of algae and green plants.
+#Texas Water Quality Data Analysis Webportal
+Texas has 59 reservoirs, Some algal blooms are the result of an excess of nutrients (particularly phosphorus and nitrogen) into waters and higher concentrations of these nutrients in water cause increased growth of algae and green plants.
 
 As more algae and plants grow, others die, e.g., fish.
 
-# This webportal stores the history water quality data in a sql database, and designed frontend for query/downloading/analyzing/visulizating, with a goal to quickly find the relationship between algea blooms and water quality. 
+#Design and Functions Support
+This webportal stores the history water quality data in a sql database, and designed frontend for query/downloading/analyzing/visulizating, with a goal to quickly find the relationship between algea blooms and water quality. 
+The basic functions include:
 
-# The basic functions include:
 1. Descriptive Statistical Analysis of historical water data in Texas;
 2. Trend Analysis (Lowess Regression) of water data in Texas, grouped by month;
 3. Graph Plotting, can create simple colorful graph using Jpgraph library;
