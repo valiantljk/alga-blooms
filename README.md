@@ -1,7 +1,9 @@
 #Texas Water Quality Data Analysis Webportal
 Texas has 59 reservoirs, Some algal blooms are the result of an excess of nutrients (particularly phosphorus and nitrogen) into waters and higher concentrations of these nutrients in water cause increased growth of algae and green plants.
 
-As more algae and plants grow, others die, e.g., fish.
+As more algae and plants grow, others die, e.g., fish. For example:
+![7](https://cloud.githubusercontent.com/assets/1396867/15704646/88dd04ac-27e3-11e6-859b-aa5145a4b680.jpg)
+
 
 This web-based data portal stores the history water quality data in a sql database, and has a frontend for query/downloading/analyzing/visulizating, with a goal to quickly find the relationship between algea blooms and water quality. 
 
